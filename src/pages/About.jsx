@@ -1,9 +1,12 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
 
-function About() {
+export default function About() {
     return (
-        <h1>This will be about page!</h1>
+        <Paper>
+            <Typography variant="h1" component="div" gutterBottom>About</Typography>
+            <Typography level="body2">This is about page!</Typography>
+        </Paper>
     );
-}
-
-export default About;
+};

@@ -1,22 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import Button from '@material-ui/core/Button';
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/content">Content</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
-    </nav>
+    <Stack sx={{ padding: "20px" }} direction="row" spacing={2}>
+      <Avatar alt="logo" src="images/logo.png" />
+      <Link to="/"><Button>Home</Button></Link>
+      <Link to="/content"><Button>Content</Button></Link>
+      <Link to="/about"><Button>About</Button></Link>
+    </Stack>
   );
 }
-
-export default Navbar;

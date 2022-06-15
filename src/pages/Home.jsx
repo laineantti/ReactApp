@@ -1,12 +1,12 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
 
-function Home() {
+export default function Home() {
     return (
-        <React.Fragment>
-            <h1>ReactApp</h1>
-            <p>I'm adding features to this app as learning purposes.</p>
-        </React.Fragment>
+        <Paper>
+            <Typography variant="h1" component="div" gutterBottom>Welcome!</Typography>
+            <Typography level="body2">I'm adding features to this app as learning purposes.</Typography>
+        </Paper>
     );
-}
-
-export default Home;
+};
