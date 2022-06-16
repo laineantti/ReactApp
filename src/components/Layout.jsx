@@ -1,16 +1,15 @@
 import React from 'react';
 import { Outlet } from "react-router-dom";
-import { Box } from '@mui/material';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <Box m={1} pt={1}>
+    <React.Fragment>
       <Navbar />
-      <Outlet />
+      <Outlet/>
       <Footer />
-    </Box>
+    </React.Fragment>
   );
 };
 

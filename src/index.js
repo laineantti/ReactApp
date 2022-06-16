@@ -11,6 +11,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import "./index.css";
 
 const darkTheme = createTheme({
   palette: {
