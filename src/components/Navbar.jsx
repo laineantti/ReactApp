@@ -1,16 +1,29 @@
-import React from "react";
+import React from 'react';
 import { Link } from "react-router-dom";
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import { Avatar, Button, AppBar, Toolbar, Box } from '@mui/material';
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <Stack sx={{ padding: "20px" }} direction="row" spacing={2}>
-      <Avatar alt="logo" src="images/logo.png" />
-      <Link to="/"><Button>Home</Button></Link>
-      <Link to="/content"><Button>Content</Button></Link>
-      <Link to="/about"><Button>About</Button></Link>
-    </Stack>
+    <AppBar position="static">
+      <Toolbar>
+        <Box m={1}>
+          <Avatar
+            alt="logo"
+            src="images/logo.png"
+          />
+        </Box>
+        <Box m={1}>
+          <Button component={Link} to="/" variant="contained" color="primary">Home</Button>
+        </Box>
+        <Box m={1}>
+          <Button component={Link} to="/content" variant="contained" color="primary">Content</Button>
+        </Box>
+        <Box m={1}>
+          <Button component={Link} to="/about" variant="contained" color="primary">About</Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
-}
+};
+
+export default Navbar;

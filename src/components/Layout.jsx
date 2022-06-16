@@ -1,14 +1,17 @@
 import React from 'react';
 import { Outlet } from "react-router-dom";
+import { Box } from '@mui/material';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-export default function Layout() {
+const Layout = () => {
   return (
-    <React.Fragment>
+    <Box m={1} pt={1}>
       <Navbar />
       <Outlet />
       <Footer />
-    </React.Fragment>
+    </Box>
   );
 };
+
+export default Layout;

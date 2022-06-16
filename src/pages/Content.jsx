@@ -1,12 +1,16 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
+import { Box, Container } from '@mui/material';
 
-export default function Content() {
+function Content() {
     return (
-        <Paper>
-            <Typography variant="h1" component="div" gutterBottom>Content</Typography>
-            <Typography level="body2">This is content page!</Typography>
-        </Paper>
+        <Box sx={{ bgcolor: 'background.paper', py: 6 }}>
+            <Container maxWidth="lg">
+                <Typography color="textPrimary" variant="h1" component="div" gutterBottom>Content</Typography>
+                <Typography color="textPrimary" level="body2">This is content page!</Typography>
+            </Container>
+        </Box>
     );
 };
+
+export default Content;

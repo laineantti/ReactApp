@@ -1,12 +1,16 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
+import { Box, Container } from '@mui/material';
 
-export default function Home() {
+function Home() {
     return (
-        <Paper>
-            <Typography variant="h1" component="div" gutterBottom>Welcome!</Typography>
-            <Typography level="body2">I'm adding features to this app as learning purposes.</Typography>
-        </Paper>
+        <Box sx={{ bgcolor: 'background.paper', py: 6 }}>
+            <Container maxWidth="lg">
+                <Typography color="textPrimary" variant="h1" component="div" gutterBottom>Welcome!</Typography>
+                <Typography color="textPrimary" level="body2">I'm adding features to this app as learning purposes.</Typography>
+            </Container>
+        </Box>
     );
 };
+
+export default Home;

@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import { Typography, Box, Container, Link } from '@mui/material';
 
-export default function Footer() {
+const Footer = () => {
     return (
         <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
             <Container maxWidth="lg">
                 <Typography variant="h6" align="center" gutterBottom>
-                    {"React + Material UI"}
+                    <Link href="https://reactjs.org/">React</Link>
+                    {" + "}
+                    <Link href="https://mui.com/">MUI</Link>
                 </Typography>
                 <Typography
                     variant="subtitle1"
@@ -17,14 +16,15 @@ export default function Footer() {
                     color="text.secondary"
                     component="p"
                 >
-                    {"Design by laineantti"}
+                    {"Design by "}
+                    <Link href="https://github.com/laineantti">laineantti</Link>
                 </Typography>
                 <Typography variant="body2" color="text.secondary" align="center">
-                    {"© " + (new Date().getFullYear()) + " "}
-                    <Link to="/about">ReactApp</Link>
-                    {" All rights reserved."}
+                    {"© " + (new Date().getFullYear()) + " ReactApp All rights reserved."}
                 </Typography>
             </Container>
         </Box>
     );
-}
+};
+
+export default Footer;

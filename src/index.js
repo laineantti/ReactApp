@@ -10,20 +10,39 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-export default function App() {
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
+const lightTheme = createTheme({
+  palette: {
+    mode: 'light',
+  },
+});
+
+const darkmode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="content" element={<Content />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider theme={darkmode ? darkTheme : lightTheme}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="content" element={<Content />} />
+            <Route path="about" element={<About />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
+export default App;
