@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 
 export default function Navbar() {
   return (
