@@ -4,7 +4,7 @@ import { Avatar, Button, AppBar, Toolbar, Box } from '@mui/material';
 
 const Navbar = () => {
   return (
-    <AppBar position="static">
+    <AppBar>
       <Toolbar>
         <Box m={1}>
           <Avatar

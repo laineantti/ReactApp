@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
             <Container maxWidth="lg">
-                <Typography variant="h6" align="center" gutterBottom>
+                <Typography variant="h6" align="center" color="text.secondary" gutterBottom>
                     <Link href="https://reactjs.org/">React</Link>
                     {" + "}
                     <Link href="https://mui.com/">MUI</Link>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <Link href="https://github.com/laineantti">laineantti</Link>
                 </Typography>
                 <Typography variant="body2" color="text.secondary" align="center">
-                    {"© " + (new Date().getFullYear()) + " ReactApp All rights reserved."}
+                    {"© " + (new Date().getFullYear()) + " ReactApp"}
                 </Typography>
             </Container>
         </Box>
