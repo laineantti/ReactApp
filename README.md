@@ -1,6 +1,8 @@
 # ReactApp
 I'm adding features to this app as learning purposes.
 
+![preview](preview.png)
+
 ## Running the project
 
 Clone this repository:
