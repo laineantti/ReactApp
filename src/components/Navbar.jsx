@@ -16,7 +16,7 @@ const Navbar = () => {
           <Button component={Link} to="/" variant="contained" color="primary">Home</Button>
         </Box>
         <Box m={1}>
-          <Button component={Link} to="/content" variant="contained" color="primary">Content</Button>
+          <Button component={Link} to="/content" variant="contained" color="primary">Naatti News</Button>
         </Box>
         <Box m={1}>
           <Button component={Link} to="/about" variant="contained" color="primary">About</Button>
