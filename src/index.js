@@ -32,10 +32,10 @@ function App() {
     <ThemeProvider theme={darkmode ? darkTheme : lightTheme}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path={process.env.PUBLIC_URL + '/'} element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="content" element={<Content />} />
-            <Route path="about" element={<About />} />
+            <Route path={process.env.PUBLIC_URL + '/content'} element={<Content />} />
+            <Route path="{process.env.PUBLIC_URL + '/about'}" element={<About />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

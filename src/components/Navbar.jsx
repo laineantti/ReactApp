@@ -9,17 +9,17 @@ const Navbar = () => {
         <Box m={1}>
           <Avatar
             alt="logo"
-            src="images/logo.png"
+            src={process.env.PUBLIC_URL + '/images/logo.png'}
           />
         </Box>
         <Box m={1}>
-          <Button component={Link} to="/" variant="contained" color="primary">Home</Button>
+          <Button component={Link} to={process.env.PUBLIC_URL + '/'} variant="contained" color="primary">Home</Button>
         </Box>
         <Box m={1}>
-          <Button component={Link} to="/content" variant="contained" color="primary">Naatti News</Button>
+          <Button component={Link} to={process.env.PUBLIC_URL + '/content'} variant="contained" color="primary">Naatti News</Button>
         </Box>
         <Box m={1}>
-          <Button component={Link} to="/about" variant="contained" color="primary">About</Button>
+          <Button component={Link} to={process.env.PUBLIC_URL + '/about'} variant="contained" color="primary">About</Button>
         </Box>
       </Toolbar>
     </AppBar>

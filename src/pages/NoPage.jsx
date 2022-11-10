@@ -15,7 +15,7 @@ function NoPage() {
                 <CardMedia
                     component="img"
                     sx={{ width: 240 }}
-                    image="images/404.gif"
+                    image={process.env.PUBLIC_URL + '/images/404.gif'}
                     alt="Tux"
                 />
             </Card>
