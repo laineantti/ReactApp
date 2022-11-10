@@ -22,3 +22,9 @@ When installation is complete, run it:
 ```
 npm start
 ```
+
+To deploy the app use [gh-pages](https://github.com/gitname/react-gh-pages) with
+
+```
+npm run deploy
+```
