@@ -25,7 +25,7 @@ export default function RecipeReviewCard(props) {
 
     return (
         <Card sx={{ maxWidth: 345 }}>
-            <Link sx={{ color: 'inherit', textDecoration: 'inherit' }} href={props.url}>
+            <Link sx={{ color: 'inherit', textDecoration: 'inherit' }} href={props.url} target="_blank">
                 <CardHeader
                     /* avatar={
                         <Avatar sx={{ textAlign: "center", width: "150px", height: "150px",bgcolor: red[500] }} aria-label="recipe">
